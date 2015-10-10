@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>弹幕测试</title>
+  <meta name="description" content="中秋画圆" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="yes" name="apple-touch-fullscreen" />
+  <meta content="telephone=no,email=no" name="format-detection" />
+  <link rel="stylesheet" type="text/css" href="http://news.sohu.com/upload/commonzzx/normal.css">
+  <style type="text/css">
+  .wrap,
+  section,
+  .screen {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .danmus {
+    z-index: 100;
+  }
+  
+  .screen {
+    position: relative;
+  }
+  
+  .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .danmus {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+
+  }  
+  .danmus li {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  
+  .danmus li p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+  }
+  
+  .danmus li p.everyDmAn {
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+  
+  button {
+    position: absolute;
+    bottom: 10%;
+    width: 40%;
+    left: 30%;
+    z-index: 100;
+    height: 50px;
+    font-size:1.5em;
+  }
+  </style>
+  <script src="http://news.sohu.com/upload/commonzzx/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="http://news.sohu.com/upload/commonzzx/touch-0.2.14.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <img src="http://news.sohu.com/upload/ninePlanets/images/1.jpg" class="bg" />
+    <button onclick="begin();">弹幕启动</button>
+  </div>
+  <script type="text/javascript">
+  var data = ["所谓的与美国佬建立“大国新型关系”", "对于中国来讲其实就是“烟袋锅一头热”", "中国的政客们根本没有把国家和人民的利益当回事。自从上世纪80年代初与美国佬拉近后什么时候听到中国赚了美国多少钱？均是讲美国佬挣了中国多少人民币！！！没主义最好！你听说过有哪个先进国家天天炫耀自己的主义多好多好吗？关键是制度！她们搞一年买一台宝马。我们搞二十年都不够所谓的与美国佬所谓的建立什么“大国新型关系”", "其实就是美国佬疯狂掠夺中国的财富和资源的关系", "所以说我们中国的政客总是喜欢搞“烟袋锅一头热”", "根本没有把国家和人民的--...显示全部>>如果不和美国合作,你能做到世界笫二吗?看看朝鲜吧!在合作中求超越,才叫高.青岛被宰后", "才明白为什么中国人爱去日本消费的缘由。中国的记者们要都象此类小编作为", "那么中国的媒体真的有戏可看啦。中国游客在米国人均消费6000美元", "俺的哪神啊", "这不等于直接送钱给美帝吗？这中国人真牠爷爷的", "官员投敌也就算了这民众咋也卖国啊？这到底是咋回事呀？？烦请小编再统计一下", "有哪些人渣去日本送给日本多少钱", "好吗？好的！花少钱  买好货  天经地义花多钱  卖孬货  天诛地灭国民素质！！走到哪里都如刘姥姥进大观园土豪太多！！走到哪里都烧钱没主义最好！你听说过有哪个先进国家天天炫耀自己的主义多好多好吗？关键是制度！又说错了不是？那些先进国家就是因为没有主义只有制度", "只所以牠们要巴结我们", "是因为我们有主义又有制度！中国游客在米国人均消费6000美元", "俺的哪神啊", "这不等于直接送钱给美帝吗？这中国人真牠爷爷的", "官员投敌也就算了这民众咋也卖国啊？这到底是咋回事呀？？烦请小编再统计一下", "有哪些人渣去日本送给日本多少钱", "好吗？好的！我老农民", "今年玉米价比去年贱三毛钱", "以后我怎麽办呀。中国人的生活水平比美国相差1000倍我们不只养活了他们.还受他们的岐视.到头来还要被他们欺侮,天理何在,公理何在,我们还要忍受他们多少年,....///窝心肠胆中国其实欠美国人的钱。中国人汉奸最多", "枫叶in秋天你是美国人吧所谓的与美国佬建立“大国新型关系”", "对于中国来讲其实就是“烟袋锅一头热”", "中国的政客们根本没有把国家和人民的利益当回事。自从上世纪80年代初与美国佬拉近后什么时候听到中国赚了美国多少钱？均是讲美国佬挣了中国多少人民币！！！你真是个脑残", "中美之间的贸易中国是顺差说明中国赚了美国人的钱", "否则", "四万亿美元的外汇储备从何而来？只不过是中国出口到美国的东西大都是技术含量不高附加值不高的产品而已。他脑残你二B你贱货本次出行各项计划", "人大通过了没有？难道这叫有舍才有得吗？我只是看到国家有多少穷人", "物价有多高", "房价有多高", "纳税人的钱真的是那么好赚", "那么好送么？心疼啊.当然", "不抛砖引玉", "也许不会有人鸟中国", "可是抛砖引玉后人家拿了我们钱", "我们也没用得到玉", "那岂不是在吃大亏吗？我们买美债越多", "美国越不怕我们。是啊", "俗话说得好", "欠钱的事爷爷", "被欠的是孙子", "谁欠谁啊", "买了不少股票、国債", "没听说谁就该欠我钱", "赢亏自理", "爱买不买。中国其实欠美国人的钱。不战而屈人之兵", "还有另外一层意思", "就是以利诱人", "约城下之盟。中国人太多了", "底子太薄了。创造和平环境的实质就是", "卧薪尝胆", "埋头苦干", "科技强国", "后来居上。也就是最后的笑者。聪明人所谓的与美国佬所谓的建立什么“大国新型关系”", "其实就是美国佬疯狂掠夺中国的财富和资源的关系", "所以说我们中国的政客总是喜欢搞“烟袋锅一头热”", "根本没有把国家和人民的--...显示全部>>不搁在心上", "怎么了", "照样做大官！所谓的与美国佬建立“大国新型关系”", "对于中国来讲其实就是“烟袋锅一头热”", "中国的政客们根本没有把国家和人民的利益当回事。自从上世纪80年代初与美国佬拉近后什么时候听到中国赚了美国多少钱？均是讲美国佬挣了中国多少人民币！！！不全对", "你落了还有----美国国债最大买家是中国。现在中国想让人民币国际化", "但这巨大的美国国债无疑是要命的绊脚石。如果当年不拉进美国关系", "世界各国怎么敢跟你贸易", "就像现在的朝鲜那样被世界孤立", "贫穷落后、灾害、科技发展不起来。要学会利用对方资源来发展自己。所谓的与美国佬建立“大国新型关系”", "对于中国来讲其实就是“烟袋锅一头热”", "中国的政客们根本没有把国家和人民的利益当回事。自从上世纪80年代初与美国佬拉近后什么时候听到中国赚了美国多少钱？均是讲美国佬挣了中国多少人民币！！！不全对", "你落了还有----美国国债最大买家是中国。现在中国想让人民币国际化", "但这巨大的美国国债无疑是要命的绊脚石。所谓的与美国佬建立“大国新型关系”", "对于中国来讲其实就是“烟袋锅一头热”", "中国的政客们根本没有把国家和人民的利益当回事。自从上世纪80年代初与美国佬拉近后什么时候听到中国赚了美国多少钱？均是讲美国佬挣了中国多少人民币！！！如果意气用事", "不顾全局", "估计中国现在就是今天的朝鲜", "贫穷、灾害、科技落后...", "在对方放下警惕状态", "利用对方的资源让自己慢慢发展", "在敌人虚弱的时候来一个致命的一击。"];
+
+  function random(min, max) {
+    return Math.floor(min + Math.random() * (max - min));
+  }
+
+  function makeDm(num,height,size,color,speeds) {
+    this.num = num; //显示几行弹幕
+    this.height = height + '%'; //弹幕区域高度
+    this.size = size + 'em'; //字号大小
+    this.color = color;//字体颜色
+    this.speeds = speeds;// 最小速度和最大速度
+  }
+  makeDm.prototype.init = function() {
+    var danmus = document.createElement('ul'),
+      num = this.num;
+    danmus.setAttribute('style', ('height:' + this.height));
+    danmus.className = 'danmus';
+    document.body.appendChild(danmus);
+    for (var i = 0; i < num; i++) {
+      var everyDm = document.createElement('li');
+      danmus.appendChild(everyDm);
+    }
+    $('.danmus li').css('height',(100/num+'%'));
+    this.putDms();
+  }
+  makeDm.prototype.putDms = function() {
+    for (var i = 0; i < data.length; i++) {
+      var randomRank = random(0, this.num);
+      $('.danmus li').eq(randomRank).append('<p>' + data[i].substring(0,10) + '</p>');
+    }
+    $('.danmus li p').css({
+      'font-size': this.size,
+      'color':this.color
+    });
+    this.pushDms();
+  }
+  makeDm.prototype.pushDms = function() {
+    var $p = $('.danmus li p');
+    for (var i = 0; i < $p.length; i++) {
+      var randomSpeed = random(this.speeds[0], this.speeds[1]) + 's',
+        randomType = 'cubic-bezier(' + Math.random() + ',' + Math.random() + ',' + Math.random() + ',' + Math.random() + ')';
+      $p.eq(i).css({
+        'transition-duration': randomSpeed,
+        'transition-timing-function': randomType
+      });
+    }
+    $('.danmus li').each(function(index) {
+      var $s = $(this).find('p');
+      for (var i = 0; i < $s.length; i++) {
+        if (i == 0) {
+          $s.eq(i).css('transition-delay', '0s');
+        } else {
+          var lastTime1 = parseInt($s.eq(i - 1).css('transition-duration'));
+          var lastTime2 = parseInt($s.eq(i - 1).css('transition-delay'));
+          $s.eq(i).css('transition-delay', (lastTime1 + lastTime2 + 's'));
+        }
+      }
+    });
+  }
+  new makeDm(8,50,1.4,'#fff',[5,15]).init();
+
+  function begin() {
+    $('.danmus li p').addClass('everyDmAn');
+  }
+  </script>
+</body>
+
+</html>
+                                    
